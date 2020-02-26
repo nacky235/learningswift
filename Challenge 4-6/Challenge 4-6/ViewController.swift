@@ -25,7 +25,7 @@ class ViewController: UITableViewController {
     }
     
     @objc func promptForItems() {
-        let ac = UIAlertController(title: "Enter answer", message: nil, preferredStyle: .alert)
+        let ac = UIAlertController(title: "Enter items to buy", message: nil, preferredStyle: .alert)
         ac.addTextField()
 
         let submitAction = UIAlertAction(title: "Submit", style: .default) { [unowned self, ac] action in
