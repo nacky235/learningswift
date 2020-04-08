@@ -29,6 +29,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @objc func importPicture() {
         let picker = UIImagePickerController()
+        picker.allowsEditing = true
         picker.delegate = self
         present(picker, animated: true)
     }
